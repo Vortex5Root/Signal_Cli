@@ -19,7 +19,7 @@ To install Signal-Cli, follow these steps:
 1. Clone the Signal-Cli repository from GitHub:
 
 ```shell
-git clone https://github.com/example/signal-cli.git
+git clone https://github.com/Vortex5Root/Signal_Cli/signal-cli.git
 ```
 
 2. Navigate to the Signal-Cli directory:
