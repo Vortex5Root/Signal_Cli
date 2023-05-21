@@ -46,10 +46,10 @@ The following examples demonstrate how to use the Signal-Cli library for differe
 import signal_cli
 
 signal = signal_cli.SignalCLI()
-signal.register('+351 919771555')
+signal.register('+351 929882666')
 ```
 
-This example registers a new Signal account with the phone number '+351 919771555'.
+This example registers a new Signal account with the phone number '+351 929882666'.
 
 ### Sending Messages
 
@@ -57,11 +57,11 @@ This example registers a new Signal account with the phone number '+351 91977155
 import signal_cli
 
 signal = signal_cli.SignalCLI()
-signal.load = '+351 919771555'  # Load the account with the specified phone number
-signal.send('+351 910456357', 'Hello, this is a test message.')
+signal.load = '+351 929882666'  # Load the account with the specified phone number
+signal.send('+351 910447343', 'Hello, this is a test message.')
 ```
 
-This example sends a message from the loaded account ('+351 919771555') to the recipient '+351 910456357'.
+This example sends a message from the loaded account ('+351 929882666') to the recipient '+351 910447343'.
 
 ### Receiving Messages
 
@@ -69,7 +69,7 @@ This example sends a message from the loaded account ('+351 919771555') to the r
 import signal_cli
 
 signal = signal_cli.SignalCLI()
-signal.load = '+351 919771555'  # Load the account with the specified phone number
+signal.load = '+351 929882666'  # Load the account with the specified phone number
 messages = signal.new_messages
 
 for message in messages:
@@ -89,11 +89,11 @@ This example retrieves and displays the received messages for the loaded account
 import signal_cli
 
 signal = signal_cli.SignalCLI()
-status = signal.getUserStatus('+351 919771555')
+status = signal.getUserStatus('+351 929882666')
 print(status)
 ```
 
-This example retrieves the status of the user with the phone number '+351 919771555'.
+This example retrieves the status of the user with the phone number '+351 929882666'.
 
 ## Class Reference
 
