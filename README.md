@@ -1,8 +1,14 @@
 # Signal-Cli Documentation
 
+| Problem Statement | Solution |
+| --- | --- |
+| Signal is a popular messaging app that offers end-to-end encryption for secure communication. However, it does not provide a public API for developers to interact with the platform programmatically. This makes it difficult to automate certain tasks such as sending messages, retrieving user status, and registering new accounts. | Signal-Cli is a Python library that provides a command-line interface (CLI) for interacting with Signal Messenger. It allows you to perform various operations such as registering a new account, sending and receiving messages, and retrieving user status. This documentation provides an overview of the Signal-Cli library and its usage. |
+
+# Introduction
+
 This documentation provides an overview of the Signal-Cli library, which is a Python implementation for interacting with Signal Messenger using the command-line interface (CLI). Signal-Cli allows you to perform various operations such as registering a new account, sending and receiving messages, and retrieving user status.
 
-## Usage
+## Dependencies
 
 To use Signal-Cli, you need to have the following prerequisites:
 
@@ -11,6 +17,23 @@ To use Signal-Cli, you need to have the following prerequisites:
 - GeckoDriver (Firefox driver) for Selenium
 
 Please make sure you have these dependencies installed before proceeding.
+
+## Index Table
+| Index | Description |
+| --- | --- |
+| 1 | [Installation](#installation) |
+| 2 | [Examples](#examples) |
+| 2.1 | [Account Registration](#account-registration) |
+| 2.2 | [Sending Messages](#sending-messages) |
+| 2.3 | [Receiving Messages](#receiving-messages) |
+| 2.4 | [Getting User Status](#getting-user-status) |
+| 3 | [Class Reference](#class-reference) |
+| 3.1 | [`SignalCLI`](#signalcli) |
+| 3.2 | [`Message`](#message) |
+| 3.3 | [`DataValidator`](#datavalidator) |
+| 3.4 | [`SignalCLI_Exception`](#signalcli_exception) |
+| 3.5 | [`User`](#user) |
+| 4 | [Conclusion](#conclusion) |
 
 ## Installation
 
@@ -21,21 +44,6 @@ To install Signal-Cli, follow these steps:
 ```shell
 git clone https://github.com/Vortex5Root/Signal_Cli/signal-cli.git
 ```
-
-2. Navigate to the Signal-Cli directory:
-
-```shell
-cd signal-cli
-```
-
-3. Install the required Python packages:
-
-```shell
-pip install -r requirements.txt
-```
-
-4. Download and install GeckoDriver (Firefox driver) for Selenium. Refer to the Selenium documentation for instructions specific to your operating system.
-
 ## Examples
 
 The following examples demonstrate how to use the Signal-Cli library for different operations.
@@ -158,6 +166,14 @@ A class representing a Signal user.
 #### Methods
 
 - `load_recv(json_values: dict) -> User`: Loads the user data from the provided JSON values.
+
+## Author
+
+- [Vortex5Root](https://github.com/Vortex5Root)
+
+## Acknowledgements
+
+- [Signal-Cli](https://github.com/AsamK/signal-cli) - The original Signal-Cli library that this documentation is based on.
 
 ## Conclusion
 
