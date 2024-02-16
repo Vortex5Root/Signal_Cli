@@ -42,8 +42,16 @@ To install Signal-Cli, follow these steps:
 1. Clone the Signal-Cli repository from GitHub:
 
 ```shell
+<<<<<<< HEAD
 git clone https://github.com/Vortex5Root/Signal_Cli/signal-cli.git
 ```
+=======
+poetry add git+https://github.com/Vortex5Root/Signal_Cli/signal-cli.git
+```
+
+4. Download and install GeckoDriver (Firefox driver) for Selenium. Refer to the Selenium documentation for instructions specific to your operating system.
+
+>>>>>>> origin/main
 ## Examples
 
 The following examples demonstrate how to use the Signal-Cli library for different operations.
