@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "signal-cli"
+version = "0.1.0"
+description = ""
+authors = ["Vortex5ROot"]
+readme = "README.md"
+packages = [{include = "signal_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datetime = "^5.4"
+selenium = "^4.17.2"
+webdrivermanager = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
